@@ -41,7 +41,7 @@ and（&&） OR（||) NOT(!)
 
 三元运算：
 
-boolean ? ifture:iffalse
+boolean ? if ture:if false
 
     a = 1, b = 2, c = 3, d = 4;
     if(a>b){
@@ -52,3 +52,91 @@ boolean ? ifture:iffalse
     2
     a > b ? 1 : 2;
     2
+
+
+
+
+for (var i=0;i<10;i++)
+{
+if(i==7){break;}
+if(i==3){continue;}
+}
+console.log('i=' + i);
+
+
+if (3>4) {
+alert('nihao');
+} else {
+    ('hahaha');
+}
+
+for (var i=0;i<10;i++) {
+  if (i==20) {
+      break;//结束
+  }
+  if (i==3) {
+      continue;// 跳过
+  }
+console.log ('i=' + i);
+}
+
+
+var animal = pig
+switch(animal){
+    case 1 'cat':
+        console.log(123)
+        break;
+    case 2 'dog':
+        console.log(234)
+        break;
+
+
+    default:
+        console.log(0000)
+        break;
+}
+
+
+return 返回值
+
+
+
+function func1(){
+    console.log('...');
+}
+function func2(str){
+    console.log('str is',str)
+}
+var func3= function (...args){
+        console.log(args,func5());
+        console.log('args.length = ',args.length);
+}
+var func4 = new Function('return 3;');
+function func5(){
+        return 4;
+}
+
+alert(func5());
+
+
+var a = 1 ;
+var b = 'jia' ;
+var c = 2, d='=', e='ji ?',f=3;
+
+var x = 8, y = 9;
+console.log(x+y);
+console.log(a+b+c+d+e);
+console.log(f);
+var av={dd:'hu', cd:'ni', hd:'gg'};
+console.log( av );
+
+
+a = new Object();
+a.name='jack';
+a.con='hk';
+a.sex='man';
+console.log(a.name+ a.con+ a.sex);
+
+
+a={h:'s', y:'f', z:'w'};
+console.log(a.h+ a.y+ a.z);

@@ -14,10 +14,23 @@ router.route('/:id')
             }
             else {
                 res.send('no fuond.')
-            }
+            }});
+router.route('/:id')
+        .delete(function(req,res,next){
+    var news;
+    var index = parseInt(req.params.id)-1;
+
+    if(index >= 0&&index<newsModel.length){
+        news = newsModel.splice(index, 1);
+        res.send(news);
+
+    }else{
+        res.send('wwwww');
+    }
+
+    }
+    );
 
 
-        }
 
-    )
 module.exports = router;

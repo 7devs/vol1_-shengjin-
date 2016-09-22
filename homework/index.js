@@ -5,7 +5,7 @@ var app = require('express')(),
 
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.use('/api',require('./lib/routers/api'));
+app.use('/user',require('./lib/routers/userapi'));
 
 
 
